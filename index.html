@@ -42,20 +42,18 @@ a{color:inherit;text-decoration:none}.wrap{width:min(1220px,calc(100% - 42px));m
 @media(max-width:700px){.uploaded-visual{padding:0 14px;margin-bottom:28px}}
 
 
-.founder-research{margin-top:24px;padding:30px;border:1px solid rgba(240,209,138,.28);border-radius:24px;background:linear-gradient(135deg,rgba(7,20,45,.88),rgba(12,30,60,.76));box-shadow:var(--shadow)}
-.founder-research-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:20px}
-.founder-research-head h3{font-size:28px;margin:6px 0 0}
-.founder-research-head p{margin:0;color:var(--muted);font-size:13px;max-width:560px}
-.pdf-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 24px}
-.pdf-frame{width:100%;height:760px;border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
-.pdf-frame object{width:100%;height:100%;border:0}
-.pdf-note{margin:14px 0 0;color:#aebbd3;font-size:11px}
-.pdf-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
-.pdf-slide{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:rgba(255,255,255,.03)}
-.pdf-slide img{display:block;width:100%;height:auto}
-.pdf-slide figcaption{padding:10px 12px;color:#cbd5e7;font-size:10px;letter-spacing:.08em}
-@media(max-width:980px){.pdf-frame{height:620px}.pdf-gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.founder-research{padding:20px}.founder-research-head{align-items:start;flex-direction:column}.pdf-frame{height:520px}.pdf-gallery{grid-template-columns:1fr}}
+/* Founder Research PDF integration */
+.founder-pdf-panel{margin-top:28px;padding:32px;border:2px solid rgba(240,209,138,.38);border-radius:24px;background:linear-gradient(135deg,rgba(10,28,58,.96),rgba(6,14,31,.96));box-shadow:var(--shadow)}
+.founder-pdf-panel h3{font-size:clamp(24px,3vw,34px);margin:8px 0 12px;color:#fff}
+.founder-pdf-panel p{color:#c9d5e9;font-size:14px;max-width:920px}
+.founder-pdf-buttons{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}
+.founder-pdf-buttons a{display:inline-flex!important;align-items:center;justify-content:center;min-height:52px;padding:14px 22px;font-size:13px;font-weight:950;letter-spacing:.04em}
+.founder-pdf-buttons .open-pdf{background:linear-gradient(135deg,#2678dc,#5b54cf);color:#fff;border:0;box-shadow:0 12px 35px rgba(56,105,220,.28)}
+.founder-pdf-buttons .download-pdf{background:#f0d18a;color:#081225;border:1px solid #f0d18a}
+.founder-pdf-viewer{width:100%;height:780px;border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+.founder-pdf-viewer iframe{display:block;width:100%;height:100%;border:0}
+.founder-pdf-fallback{margin-top:16px;font-size:12px;color:#aebbd3}
+@media(max-width:700px){.founder-pdf-panel{padding:22px}.founder-pdf-buttons{flex-direction:column}.founder-pdf-buttons a{width:100%}.founder-pdf-viewer{height:560px}}
 
 </style>
 </head>
@@ -139,6 +137,27 @@ a{color:inherit;text-decoration:none}.wrap{width:min(1220px,calc(100% - 42px));m
 <p>The founder’s 20 years of theorist and technical political research scientist robust concepts building is presented as taking responsibility to transform and revolutionize the current static legacy public-administration governance into a responsibly and digitally responding real-time government-entity concept that can speak with citizens directly 24/7 with a tamper-proof recorded audit trail.</p>
 </div>
 </div>
+
+<div class="founder-pdf-panel" id="founder-research-pdf">
+  <div class="eyebrow">FOUNDER RESEARCH / SEMINAR DOCUMENT</div>
+  <h3>Digitally Living Governance Research Concept</h3>
+  <p>Explore the complete uploaded research seminar document. The full PDF is included in this GitHub Pages package and can be opened in a new tab or downloaded directly.</p>
+
+  <div class="founder-pdf-buttons">
+    <a class="button open-pdf" href="documents/research-concept-dlg-seminar.pdf" target="_blank" rel="noopener">OPEN FULL RESEARCH PDF ↗</a>
+    <a class="button download-pdf" href="documents/research-concept-dlg-seminar.pdf" download="Research-Concept-DLG-Seminar.pdf">DOWNLOAD RESEARCH PDF ↓</a>
+  </div>
+
+  <div class="founder-pdf-viewer">
+    <iframe
+      src="documents/research-concept-dlg-seminar.pdf"
+      title="Digitally Living Governance Research Concept Seminar PDF">
+    </iframe>
+  </div>
+
+  <p class="founder-pdf-fallback">If the embedded PDF does not display in your browser, use the <strong>OPEN FULL RESEARCH PDF</strong> or <strong>DOWNLOAD RESEARCH PDF</strong> buttons above.</p>
+</div>
+
 </section>
 
 <section class="section philosophy"><div class="wrap"><div class="section-head"><div><div class="eyebrow">08 / LOGICAL ANALYSIS PHILOSOPHY</div><h2>QUESTION.<br><em>ANALYSE. IMPROVE.</em></h2></div><p>The founder describes a strong influence from Gautam Buddha's logical-analysis concept: important ideas should be examined rather than accepted blindly, tested against selfless moral human values, and continuously improved without harming anyone.</p></div><div class="quote-card"><h3>A principle of responsible adoption</h3><p>Do not take an important concept or anything as an absolute truth in the mortal world simply because it came from thousands of years ago, from sages, scholars, social reformers or forefathers, or because it has been seen and believed since birth.</p><p>Instead, take the concept into the <b>soul, heart and mind</b>, test it and logically analyse it with respect to <b>selfless moral human values</b>. If the soul, heart and mind agree with the concept or ideology, follow or adopt it in the true spirit, and then improve it step-by-step without harming anyone.</p></div></div></section>
