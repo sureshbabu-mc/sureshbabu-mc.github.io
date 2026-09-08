@@ -42,12 +42,12 @@ a{color:inherit;text-decoration:none}.wrap{width:min(1220px,calc(100% - 42px));m
 @media(max-width:700px){.uploaded-visual{padding:0 14px;margin-bottom:28px}}
 
 
-/* Founder Research PDF integration */
+/* Founder Research PDF — root-level GitHub Pages path */
 .founder-pdf-panel{margin-top:28px;padding:32px;border:2px solid rgba(240,209,138,.38);border-radius:24px;background:linear-gradient(135deg,rgba(10,28,58,.96),rgba(6,14,31,.96));box-shadow:var(--shadow)}
 .founder-pdf-panel h3{font-size:clamp(24px,3vw,34px);margin:8px 0 12px;color:#fff}
 .founder-pdf-panel p{color:#c9d5e9;font-size:14px;max-width:920px}
 .founder-pdf-buttons{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}
-.founder-pdf-buttons a{display:inline-flex!important;align-items:center;justify-content:center;min-height:52px;padding:14px 22px;font-size:13px;font-weight:950;letter-spacing:.04em}
+.founder-pdf-buttons a{display:inline-flex!important;align-items:center;justify-content:center;min-height:52px;padding:14px 22px;font-size:13px;font-weight:950;letter-spacing:.04em;text-decoration:none}
 .founder-pdf-buttons .open-pdf{background:linear-gradient(135deg,#2678dc,#5b54cf);color:#fff;border:0;box-shadow:0 12px 35px rgba(56,105,220,.28)}
 .founder-pdf-buttons .download-pdf{background:#f0d18a;color:#081225;border:1px solid #f0d18a}
 .founder-pdf-viewer{width:100%;height:780px;border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
@@ -141,21 +141,15 @@ a{color:inherit;text-decoration:none}.wrap{width:min(1220px,calc(100% - 42px));m
 <div class="founder-pdf-panel" id="founder-research-pdf">
   <div class="eyebrow">FOUNDER RESEARCH / SEMINAR DOCUMENT</div>
   <h3>Digitally Living Governance Research Concept</h3>
-  <p>Explore the complete uploaded research seminar document. The full PDF is included in this GitHub Pages package and can be opened in a new tab or downloaded directly.</p>
-
+  <p>Explore the complete research seminar document. This version is configured for the current GitHub repository structure where the PDF file is stored in the repository root.</p>
   <div class="founder-pdf-buttons">
-    <a class="button open-pdf" href="documents/research-concept-dlg-seminar.pdf" target="_blank" rel="noopener">OPEN FULL RESEARCH PDF ↗</a>
-    <a class="button download-pdf" href="documents/research-concept-dlg-seminar.pdf" download="Research-Concept-DLG-Seminar.pdf">DOWNLOAD RESEARCH PDF ↓</a>
+    <a class="button open-pdf" href="research-concept-dlg-seminar.pdf" target="_blank" rel="noopener">OPEN FULL RESEARCH PDF ↗</a>
+    <a class="button download-pdf" href="research-concept-dlg-seminar.pdf" download="Research-Concept-DLG-Seminar.pdf">DOWNLOAD RESEARCH PDF ↓</a>
   </div>
-
   <div class="founder-pdf-viewer">
-    <iframe
-      src="documents/research-concept-dlg-seminar.pdf"
-      title="Digitally Living Governance Research Concept Seminar PDF">
-    </iframe>
+    <iframe src="research-concept-dlg-seminar.pdf" title="Digitally Living Governance Research Concept Seminar PDF"></iframe>
   </div>
-
-  <p class="founder-pdf-fallback">If the embedded PDF does not display in your browser, use the <strong>OPEN FULL RESEARCH PDF</strong> or <strong>DOWNLOAD RESEARCH PDF</strong> buttons above.</p>
+  <p class="founder-pdf-fallback">If the embedded PDF does not display, use the OPEN FULL RESEARCH PDF or DOWNLOAD RESEARCH PDF buttons above.</p>
 </div>
 
 </section>
